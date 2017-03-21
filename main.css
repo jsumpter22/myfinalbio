@@ -1,0 +1,256 @@
+@font-face {
+  font-family: 'playlist_caps';
+  src: url('../assets/fonts/playlist_caps-webfont.woff');
+  
+}
+
+.wrapper {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+body {
+    background-color: #83838d;
+}
+
+nav {
+    text-align: center;
+    border: black;
+    background-color: #6d6d70;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-family: playlist_caps;   
+}
+
+h4{
+    margin-top: -40px auto;
+}
+
+.drop{
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.drop:active {
+    box-shadow: 0 5px 3px 0 gray;
+    transform: translateY(4px);
+    color: black;
+}
+
+.circle {
+    width: 25px;
+    position: absolute;
+    top: 13px;
+    right: 40px;
+}
+
+.circle:active {
+    box-shadow: 0 5px 3px 0 gray;
+    transform: translateY(4px);
+    color: black;
+}
+
+.handstand {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    width: 130px;
+    height: 250px;
+    position: absolute;
+    left: 50px;
+    top:25px;
+    z-index: 1;
+}
+
+h1 {
+  color: #932226;
+  font-size: 4.5em;
+  font-family: playlist_caps;
+  margin: 0 auto;  
+  text-align: center;
+}
+
+.first{
+    position: relative;
+    text-shadow: 3px 3px 5px black;
+}
+
+.last {
+    position: absolute;
+    left: 280px;
+    font-size: 2em;
+     text-shadow: 2px 2px 5px black;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.forest {
+    position: relative;
+    height: 400px;
+    top: 173px;
+    max-width: 100%;
+    margin-bottom: 140px
+}
+
+.bio {
+    z-index: 2;
+    font-family: playlist_caps;
+    margin-top: -370px;
+    color: white;
+    position: absolute;
+    border: 2px solid white;
+    padding: 30px;
+    width: 150px;
+    left: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 5px white;
+    
+    
+}
+
+h2 {
+    text-align: center;
+    color: #402220; 
+    font-size: 2.5em;
+    font-family: playlist_caps;
+    text-shadow: 1px 1px 5px white;
+    margin-top: 100px;
+}
+
+li {
+  list-style: none;
+    display: inline;
+    border: 2px solid white;
+    padding: 30px;
+    justify-content: flex-end;
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+.poster {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+
+figcaption {
+    text-align: center;
+    color: white;
+}
+
+.button{
+    box-shadow: 0 6px 4px 0 gray, 0 6px 30px 5px gray;
+    border-radius: 15px;
+    z-index: 2;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.button:active {
+    background-color: white;
+    box-shadow: 0 5px 3px 0 gray;
+    transform: translateY(4px);
+    color: black;
+}
+
+.hungergames {
+    max-width: 100%;
+    
+}
+
+.book {
+    color:white;
+    font-family: playlist_caps;
+    line-height: 1.5;
+    text-align: center;
+    
+}
+
+a:visted {
+    color: black; 
+}
+
+footer {
+    background-color: #6d6d70;
+    clear: both;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: baseline;
+    max-width: 50%    
+}
+
+.copywright{
+    font-family: playlist_caps;
+    text-align: center;
+}
+
+/** media queries **/
+ 
+@media (min-width: 600px) {
+	section { 
+	display: flex;
+	flex-flow: row wrap;
+		justify-content: space-around;
+		
+  }
+	text-align: center;}
+	.poster {
+		width: 100%;
+	}
+	.book {
+		width: 100%;
+	}
+	p {
+		font-size: 1em;
+}
+
+
+/**
+
+@media (max-midth: 200px) {
+    .section {
+        display: block;
+        position: absolute;
+        margin: auto ;
+        justify-content: flex-end;   
+    }
+    
+    h1 {
+        font-size: 5em;
+    }
+    
+    .wrapper {
+        max-width: 55%;
+        margin: 0 auto;
+    }
+}
